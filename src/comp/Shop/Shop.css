@@ -1,0 +1,325 @@
+:root {
+    --main-am-color:#ffd900;
+    --third-am-color:#232323;
+    --second-am-color:#3F51B5;
+    --am-transition: 0.5s;
+}
+.shop {
+    width: 100%;
+    padding: 20px 30px;
+}
+@media (max-width:413px) {
+    .shop {
+        width: 150%;
+    }
+}
+.shop h2 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    letter-spacing: 1px;
+    color: #232323;
+    font-size: 32px;
+    font-weight: 300;
+}
+.shop p {
+    margin-top: 5px;
+    color: #8a8a8a;
+    font-size: 14px;
+    font-weight: 600;
+}
+.shop .container {
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    /* gap: px; */
+}
+
+
+
+/* @media (max-width:793px) {
+    .shop .container {
+        max-width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        gap: 16px;
+        align-items: center;
+        margin-left: 32px;
+    }
+    
+} */
+.shop .container .sidebar {
+    width: 25%;
+}
+
+.category
+{
+    border: 3px solid #f6f6f6;
+    width: 250px;
+}
+.category .header
+{
+    max-width: 100%;
+    padding: 10px 20px;
+    background: #f6f6f6;
+}
+.category .header h3
+{
+    font-size: 16px;
+    color: #232323;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.category .box
+{
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px 20px;
+}
+.category .box ul
+{
+    max-width: 100%;
+}
+.category .box ul li
+{
+    list-style: none;
+    margin-left: 10px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #8a8a8a;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.category .box ul li:hover
+{
+    color: #232323;
+}
+.shop .container .left_box .banner
+{
+    margin-top: 20px;
+    width: 250px;
+}
+.banner .img_box img
+{
+    width: 100%;
+    margin-top: 15px;
+    object-fit: cover;
+}
+/* @media (max-width:) {
+    
+} */
+.shop .container .right_box
+{
+    width: 74%;
+}
+.shop .container .right_box .banner
+{
+    max-width: 100%;
+}
+.shop .container .right_box .banner .img_box img
+{
+    width: 100%;
+    object-fit: cover;
+}
+
+.shop .container .right_box .product_box
+{
+    max-width: 100%;
+    padding: 10px 10px;
+}
+.shop .container .right_box .product_box h2
+{
+    color: #232323;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 22px;
+    margin-top: 10px;
+}
+.shop .container .right_box .product_box .product_container
+{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10px;
+
+}
+.shop .container .right_box .product_box .product_container .box
+{
+    width: 195px;
+    height: 295px;
+    padding: 10px 10px;
+    border: 4px solid #d0d0d0;
+    margin-top: 20px;
+    margin-left: 20px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.shop .container .right_box .product_box .product_container .box .img_box
+{
+    display: flex;
+}
+.shop .container .right_box .product_box .product_container .box .img_box img
+{
+    width: 190px;
+    height: 179px;
+    object-fit: cover;
+}
+.shop .container .right_box .product_box .product_container .box .img_box .icon
+{
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    margin-top: 10px;
+    transition: var(--am-transition);
+}
+.shop .container .right_box .product_box .product_container .box .img_box .icon li
+{
+    list-style: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 10px 10px;
+    margin-top: 10px;
+    color: #8a8a8a;
+    background: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.shop .container .right_box .product_box .product_container .box .img_box .icon li:hover
+{
+    color:#fff;
+    background: var(--second-am-color);
+}
+.shop .container .right_box .product_box .product_container .box:hover .img_box .icon
+{
+    margin-left: -28%;
+    cursor: pointer;
+}
+.shop .container .right_box .product_box .product_container .box .info2
+{
+    margin-left: 10px;
+}
+.shop .container .right_box .product_box .product_container .box h3.h3 {
+    font-size: 1.2rem !important;
+    font-weight: 700 !important;
+    color: var(--third-am-color) !important;
+}
+.shop .container .right_box .product_box .product_container .box .info2 p.p {
+    color: var(--second-am-color);
+    margin-bottom: 0;
+}
+.shop .container .right_box .product_box .product_container .box .info2 button.btn2 {
+    position: relative;
+    top: -10px;
+    padding: 6px 10px;
+    background-color: var(--main-am-color);
+    border: none;
+    color: var(--third-am-color);
+    outline: none;
+    align-items: center;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: var(--am-transition);
+    left: 65px;
+}
+.shop .container .right_box .product_box .product_container .box .info2 button:hover
+{
+    color:  #eee;
+    background: var(--second-am-color);
+}
+@media (max-width:793px) {
+    .shop .container {
+        max-width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        gap: 16px;
+        align-items: center;
+        margin-left: 32px;
+    }
+    
+}
+
+
+@media (max-width:455px) {
+    .shop .container .sidebar {
+
+        margin-left: -82px;
+    }
+    
+}
+
+@media (max-width:453px) {
+    .shop .container {
+
+        margin-left: -67px;
+    }
+    .shop .container .right_box  {
+        margin-left: 80px;
+    }
+
+    
+}
+@media (max-width:300px) {
+    .shop .container {
+
+        margin-left: -89;
+    }
+    .shop .container .right_box  {
+        margin-left: 80px;
+    }
+
+    
+}
+
+@media (max-width:282px) {
+    .shop .container .right_box
+    {
+        margin-left: 68px;
+    }
+    .shop .container .right_box .product_box .product_container
+    {
+        width: 180%;
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 10px;
+    }
+    .shop .container .right_box .product_box .product_container .box
+    {
+        width: 195px;
+        height: 295px;
+        padding: 10px 10px;
+        border: 4px solid #d0d0d0;
+        margin-top: 20px;
+        margin-left: 20px;
+        overflow: hidden;
+        border-radius: 5px;
+    }
+    .shop .container .right_box .banner .img_box img
+    {
+    width: 132px;
+    height: 150px;
+    }
+}
+@media (max-width:768px) {
+
+    .banner .img_box img
+    {
+        width: 245px;
+    }
+    .shop .container .right_box .banner .img_box img
+{
+    width: 600px;
+    object-fit: cover;
+}
+}
+@media (max-width:733px) {
+    .shop .container .sidebar {
+        width: 25%;
+        margin-left: 78px;
+    }
+    
+}

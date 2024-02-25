@@ -1,0 +1,201 @@
+:root {
+    --main-am-color:#f2cf0a;
+    --third-am-color:#232323;
+    --second-am-color:#3F51B5;
+    --am-transition: 0.5s;
+}
+.cart {
+    width: 100%;
+    padding: 20px 30px;
+}
+.cart h3 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    letter-spacing: 1px;
+    color: #232323;
+    font-size: 32px;
+    font-weight: 300;
+}
+.cart .empty_cart {
+    width: 100%;
+    align-items: center;
+}
+.cart .empty_cart h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #232323;
+    letter-spacing: 1px;
+}
+.cart .empty_cart button {
+    margin-left: 45%;
+    padding: 10px 30px;
+    margin-top: 10px;
+    background: var(--second-am-color);
+    color: #eee;
+    border: none;
+    outline: none;
+    border: 1px solid var(--second-am-color);
+    font-weight: 600;
+    cursor: pointer;
+}
+.cart .container {
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* gap: px; */
+}
+
+
+.cart .box .img_box img{
+    width: 270px;
+    height: 100%;
+
+}
+.cart .box .detail{
+    display: flex;
+    width: 100%;
+}
+.cart  .container .box .detail .info{
+    margin-top: 40px;
+}
+.cart .container .box .detail .info h4{
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #8a8a8a;
+}
+.cart .container .box .detail .info h{
+    margin-top: 10px;
+    color: var(--main-am-color);
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+.cart .container .box .detail .info p{
+    margin-top: 10px;
+    color: #232323;
+    text-transform: uppercase;
+}
+.cart .container .box .detail .quantity{
+    margin-top: 65px;
+    margin-left: 70px;
+    display: flex;
+}
+
+.cart .container .box .detail .quantity button{
+    padding: 10px 20px;
+    color: #eee;
+    border: none;
+    outline: none;
+    background: var(--third-am-color);
+    font-weight: 600;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.cart .container .box .detail .quantity input{
+    height: 40px;
+    padding: 10px 20px;
+    background: none;
+    border: none;
+    outline: none;
+    border: 2px solid var(--third-am-color);
+    color: var(--second-am-color);
+    font-size: 14px;
+    font-weight: 600;
+    width: 64px;
+}
+.cart .container .box .detail .icon{
+    margin-top: 65px;
+    margin-left: 60px;
+}
+
+.cart .container .box .detail .icon li{
+    list-style: none;
+    background: var(--second-am-color);
+    padding: 10px 10px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.cart .bottom {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 40px;
+    flex-direction: column;
+    align-items: center;
+}
+.cart .bottom .Total h4{
+    font-size: 22px;
+    color: var(--third-am-color);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.cart .bottom button{
+    padding: 10px 30px;
+    border: none;
+    outline: none;
+    background: none;
+    background: var(--second-am-color);
+    color: #eee;
+    font-weight: 600;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+/* responsive */
+@media (max-width:455px) {
+    .cart .container .box .detail .quantity
+    {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin-bottom: 21px;
+    }
+    .cart .container .box .detail .quantity input
+    {
+        height: 40px;
+    padding: 10px 20px;
+    background: none;
+    border: none;
+    outline: none;
+    border: 2px solid var(--third-am-color);
+    color: var(--second-am-color);
+    font-size: 14px;
+    font-weight: 600;
+    width: 64px;
+    margin: 7px 0;
+    }
+}
+
+@media (max-width:335px) {
+    .cart .container .box .detail .icon
+    {
+        margin-top: 108px;
+        margin-left: 25px;
+    }
+    .cart .container .box .detail .quantity
+    {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin-bottom: 21px;
+        margin-left: 30px;
+    }
+}
+@media (max-width:719px) {
+    .cart .container .box {
+        flex-wrap: wrap;
+    }
+    .cart .box .detail
+    {
+        margin-top: -51px;
+    }
+}

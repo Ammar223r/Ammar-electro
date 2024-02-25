@@ -1,0 +1,19 @@
+:root
+{
+    --main-am-color:#f2cf0a;
+    --third-am-color:#232323;
+    --second-am-color:#3F51B5;
+    --am-transition: 0.5s;
+}
+button.logout.btn.btn-primary {
+    padding: 7px 7px !important;
+    background: var(--main-am-color) !important;
+    color:var(--third-am-color) !important;
+    font-weight: 700 !important;
+    border:  none !important;
+}
+button.logout.btn.btn-primary:hover {
+    background: var(--second-am-color) !important;
+    color: #eee !important;
+    border:  none !important;
+}

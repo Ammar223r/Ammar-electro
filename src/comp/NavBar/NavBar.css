@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+:root {
+    --main-am-color:#ad0b0b;
+    --third-am-color:#232323;
+    --second-am-color:#3F51B5;
+    --am-transition: 0.5s;
+}
+.header {
+    width: 100%;
+}
+.top {
+    max-width: 100%;
+    display: flex;
+    padding: 10px 10px;
+    background-color: #e6e9ec;
+    align-items: center;
+}
+.header .top .icon {
+    margin-left: 20px;
+    font-size: 20px;
+    color: #8a8a8a;
+}
+.header .top .info p {
+    margin-left: 15px;
+    color: #8a8a8a;
+    margin-bottom: 0px;
+}
+
+.header .center {
+    display: flex;
+    padding: 10px 40px ;
+    max-width: 100%;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .center .logo {
+    font-size: 20px;
+    color: var(--second-am-color);
+    font-weight: 700;
+    background-color: #f2efef;
+    padding: 5px 5px;
+    cursor: pointer;
+    border: 2px solid #000000;
+}
+.header .center .logo span {
+    background: var(--second-am-color);
+    padding: 5px;
+    color: #ffff;
+}
+.header .center .logo a {
+    border: none;
+}
+.header .center .user {
+    display: flex;
+    margin-right: 30px;
+    align-items: center;
+}
+.header .center .user .icon {
+    margin-right: 10px;
+}
+.header .center .user .btn button {
+    outline: none;
+    border: none;
+    font-size: 16px;
+    background: none;
+    cursor: pointer;
+}
+
+.header .center .profile {
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+}
+.header .center .profile .icon {
+    padding:8px 8px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+.header .center .profile .info {
+    margin-left: 5px;
+    padding-top: 16px
+}
+.header .center .profile .info h2 {
+    font-size: 15px;
+    color: #fff;
+}
+.header .center .profile .info p {
+    font-size: 15px;
+    color: #100f0f;
+    font-weight: bold;
+}
+.header .navbar {
+    background-color: rgb(26, 25, 25);
+    
+}
+.navbar .navbar-toggler {
+    color: #fff;
+    font-size: 25px;
+    border: 1px solid #fff;
+}
+.navbar .navbar-toggler:focus {
+    box-shadow: none;
+}
+.navbar .navbar-toggler[aria-expanded="true"] {
+    border: 1px solid var(--green-color);
+}
+.header .navbar .login {
+    display: flex;
+    align-items: baseline;
+} 
+.header .navbar .login .icon {
+    margin-right: 10px;
+    font-size: 24px;
+    color: var(--main-am-color);
+}
+.header .navbar .login .info {
+    color: #fff;
+} 
+.offer
+{
+    border-radius: 10px;
+    background: var(--second-am-color);
+    margin: 10px;
+}
+.offer p
+{
+    margin-top: 5px;
+    text-transform: uppercase;
+    color: #eee;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 0;
+    padding: 10px 7px;
+}
